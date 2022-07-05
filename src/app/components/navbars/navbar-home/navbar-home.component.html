@@ -1,0 +1,38 @@
+<nav class="flex items-center bg-transparent p-3 flex-wrap">
+  <a routerLink="/" class="p-2 inline-flex items-center">
+    <img src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=128" alt="Racor logo" class="rounded-full w-12 object-cover">
+    <span class="font-bold text-white text-xl pl-2 tracking-wide">Racor</span>
+  </a>
+
+  <input type="checkbox" class="peer lg:hidden inline-flex absolute top-5 right-3 z-10 opacity-0 cursor-pointer w-12 h-12">
+
+  <button class="text-text_gray inline-flex px-4 py-3 hover:text-white rounded lg:hidden ml-auto ">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </button>
+
+  <div class="hidden peer-checked:block w-full lg:inline-flex lg:flex-grow lg:w-auto">
+
+    <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:space-x-10 text-sm flex flex-col">
+
+      <a routerLink="commands" class=" text-text_gray lg:inline-flex lg:w-auto hover:text-white px-3 py-2 rounded transition-colors">
+        <span class="font-medium">Commands</span>
+      </a>
+      <a routerLink="invite" class="font-medium text-text_gray lg:inline-flex lg:w-auto hover:text-white px-3 py-2 rounded transition-colors">
+        <span class="">Invite</span>
+      </a>
+      <a routerLink="servers" class="font-medium text-text_gray lg:inline-flex lg:w-auto hover:text-white px-3 py-2 rounded transition-colors">
+        <span>Servers</span>
+      </a>
+      <a routerLink="premium" class="font-medium text-orange_racor lg:inline-flex lg:w-auto hover:text-white px-3 py-2 rounded transition-colors">
+        <span>Premium</span>
+      </a>
+      <a href="https://discord.com/api/oauth2/authorize?client_id=970029327758540831&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fauth%2Fredirect&response_type=code&scope=identify" class="font-medium text-text_gray lg:inline-flex lg:w-auto">
+        <button class="bg-red_racor px-4 rounded-xl hover:text-white transition-colors">
+          <span class="font-medium text-white py-2">Login</span>
+        </button>
+      </a>
+
+    </div>
+
+  </div>
+</nav>

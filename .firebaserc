@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "racor-38963": {
+      "hosting": {
+        "web": [
+          "racor-bot"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "racor-38963"
+  }
+}

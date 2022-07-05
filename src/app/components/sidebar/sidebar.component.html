@@ -1,0 +1,76 @@
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <nav class="sidebar w-full xl:w-64 p-3 pr-4 bg-sidebar_color transition-all z-10 ease-linear fixed top-0 left-0 h-full" [ngClass]="{ 'close': toggle }">
+        <header>
+            <div class="cursor-pointer bg-icons_bg rounded-md shadow-lg select-menu">
+              <div class="flex items-center pl-3 p-2" (click)="toggleActive()">
+                <img class="w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+
+                <i class="bx bx-chevron-down text-2xl absolute right-3 text nav-text" [ngClass]="{ 'active': active }"></i>
+              </div>
+            </div>
+
+            <ul class="options hidden relative mt-3 overflow-y-scroll h-52" [ngClass]="{ 'active': active }">
+              <li class="flex cursor-pointer items-center bg-icons_bg hover:bg-sidebar_hover rounded-md hover:shadow-md transition-all">
+                <img class="ml-3 w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+              </li>
+
+              <li class="flex cursor-pointer items-center bg-icons_bg hover:bg-sidebar_hover rounded-md hover:shadow-md transition-all">
+                <img class="ml-3 w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+              </li>
+
+              <li class="flex cursor-pointer items-center bg-icons_bg hover:bg-sidebar_hover rounded-md hover:shadow-md transition-all">
+                <img class="ml-3 w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+              </li>
+              <li class="flex cursor-pointer items-center bg-icons_bg hover:bg-sidebar_hover rounded-md hover:shadow-md transition-all">
+                <img class="ml-3 w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+              </li>
+              <li class="flex cursor-pointer items-center bg-icons_bg hover:bg-sidebar_hover rounded-md hover:shadow-md transition-all">
+                <img class="ml-3 w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+              </li>
+              <li class="flex cursor-pointer items-center bg-icons_bg hover:bg-sidebar_hover rounded-md hover:shadow-md transition-all">
+                <img class="ml-3 w-9 rounded-full" src="https://cdn.discordapp.com/avatars/740994643801407528/281fb48a3870a0f7eb66fe5131263116.webp?size=1024" alt="Racor logo">
+
+                <span class="ml-3 text nav-text">Racor</span>
+              </li>
+            </ul>
+
+            <i class='bx bx-chevron-right toggle' (click)="sidebarToggle()"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu mb-5">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links" *ngFor="let item of sidebar">
+                    <li class="nav-link">
+                        <a routerLink={{item.url}}>
+                            <i class={{item.icon}} ></i>
+                            <span class="text nav-text">{{item.title}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+      <app-navbar-dashboard></app-navbar-dashboard>
+      <router-outlet></router-outlet>
+  </section>
+</body>

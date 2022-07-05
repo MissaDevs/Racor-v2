@@ -1,0 +1,4 @@
+<div *ngIf="loading" class="bg-discord_gray h-screen items-center">
+  <app-loading class="absolute top-1/2 left-1/2"></app-loading>
+</div>
+<router-outlet *ngIf="!loading"></router-outlet>

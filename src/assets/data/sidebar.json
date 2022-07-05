@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Dashboard",
+    "url": "/dashboard/2342141414141411/dashboard/",
+    "icon": "bx bx-home-alt icon"
+  },
+  {
+    "title": "Commands",
+    "url": "/dashboard/2342141414141411/commands/",
+    "icon": "bx bx-terminal icon"
+  },
+  {
+    "title": "Moderator",
+    "url": "/dashboard/2342141414141411/moderator/",
+    "icon": "bx bx-lock-alt icon"
+  },
+  {
+    "title": "Tickets",
+    "url": "/dashboard/2342141414141411/tickets/",
+    "icon": "bx bx-note icon"
+  },
+  {
+    "title": "Notifications",
+    "url": "/dashboard/2342141414141411/notis/",
+    "icon": "bx bx-bell icon"
+  },
+  {
+    "title": "Welcomes",
+    "url": "/dashboard/2342141414141411/welcomes/",
+    "icon": "bx bx-door-open icon"
+  },
+  {
+    "title": "Reaction Roles",
+    "url": "/dashboard/2342141414141411/reactions/",
+    "icon": "bx bx-user-voice icon"
+  },
+  {
+    "title": "Music",
+    "url": "/dashboard/2342141414141411/music/",
+    "icon": "bx bx-music icon"
+  },
+  {
+    "title": "Economy",
+    "url": "/dashboard/2342141414141411/economy/",
+    "icon": "bx bx-dollar-circle icon"
+  },
+  {
+    "title": "Levels",
+    "url": "/dashboard/2342141414141411/levels/",
+    "icon": "bx bx-trending-up icon"
+  },
+  {
+    "title": "Embeds",
+    "url": "/dashboard/2342141414141411/embeds/",
+    "icon": "bx bx-message-square-edit icon"
+  },
+  {
+    "title": "Images",
+    "url": "/dashboard/2342141414141411/images/",
+    "icon": "bx bx-images icon"
+  },
+  {
+    "title": "Stats",
+    "url": "/dashboard/2342141414141411/stats/",
+    "icon": "bx bx-stats icon"
+  }
+]
